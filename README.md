@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Enhanced Todo App with Priority Management
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+タスクの優先度と期限を管理できる、モダンなTodoアプリケーションです。
+TailwindCSSを使用した美しいUIと、直感的な操作性を実現しました。
 
-## Available Scripts
+## 主な機能
 
-In the project directory, you can run:
+### 基本的なタスク管理
+- タスクの追加・削除
+- タスクの完了・未完了の切り替え
+- 完了済みタスクの一括削除
+- 残りのタスク数の表示
 
-### `npm start`
+### 拡張機能
+- 優先度管理システム
+  - 3段階の優先度設定（高・中・低）
+  - 優先度に応じた色分け表示（高:赤、中:黄、低:青）
+  - 新規タスクの優先度デフォルト値設定
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 期限管理機能
+  - タスクごとの期限日設定
+  - 期限切れタスクの視覚的警告
+  - 日付選択の直感的なUI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### UI/UX の特徴
+- モダンでクリーンなデザイン
+- レスポンシブ対応のレイアウト
+- タスクのカード形式表示
+- 視認性を重視した色使い
+- 直感的な操作性
 
-### `npm test`
+## 使用技術
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **フレームワーク/ライブラリ**
+  - React.js
+  - TailwindCSS
+  - UUID
 
-### `npm run build`
+## セットアップ手順
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. パッケージのインストール
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. アプリケーションの起動
+npm start
+ブラウザで自動的に http://localhost:3000 が開き、アプリケーションが表示されます。
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 開発での工夫点
 
-### `npm run eject`
+### コンポーネント設計
+- 責任の分離を意識したコンポーネント分割
+- Props を活用した効率的なデータフロー
+- 再利用可能なコンポーネント設計
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 状態管理
+- React Hooks（useState, useRef）の効率的な活用
+- 効率的なstate更新処理
+- コンポーネント間のデータ共有の最適化
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### UIデザイン
+- TailwindCSSによる一貫したデザイン
+- 視覚的フィードバックの実装
+  - 優先度による色分け表示
+  - 期限切れタスクの警告表示
+  - 完了タスクの視覚的表現
+- レスポンシブ対応のレイアウト
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 機能の改善
+- 空白文字のトリミング処理
+- 優先度のデフォルト値設定
+- 期限管理システムの実装

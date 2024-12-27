@@ -1,4 +1,4 @@
-#Todo App with Priority Management
+# Todo App with Priority Management
 
 タスクの優先度と期限を管理できる、モダンなTodoアプリケーションです。
 TailwindCSSを使用した美しいUIと、直感的な操作性を実現しました。
